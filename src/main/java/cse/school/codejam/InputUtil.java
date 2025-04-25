@@ -28,7 +28,6 @@ public class InputUtil {
         while (true) {
             System.out.print(prompt);
             try {
-                scanner.nextLine();
                 return Integer.parseInt(scanner.nextLine().trim());
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input. Enter a number.");
