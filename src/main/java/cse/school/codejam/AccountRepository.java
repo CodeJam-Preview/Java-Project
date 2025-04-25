@@ -30,8 +30,8 @@ public class AccountRepository {
         accounts.remove(accountNumber);
     }
 
-    public Collection<BankAccount> getAllAccounts() {
-        return accounts.values();
+    public List<BankAccount> getAllAccounts() {
+        return new ArrayList<>(accounts.values());
     }
 
     public int getTotalAccounts() {
