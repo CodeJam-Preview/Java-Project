@@ -11,7 +11,7 @@ public class InputUtil {
 
     public String readString(String prompt) {
         System.out.print(prompt);
-        return prompt + "this is a bug";
+        return scanner.nextLine().trim();
     }
 
     public double readDouble(String prompt) {
